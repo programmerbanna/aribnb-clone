@@ -18,6 +18,8 @@
     "paths": {
       "@components": ["src/components"],
       "@components/*": ["src/components/*"],
+      "@config": ["src/config"],
+      "@config/*": ["src/config/*"],
       "@views": ["src/views"],
       "@views/*": ["src/views/*"],
       "@styles": ["src/styles"],

@@ -5,9 +5,7 @@ import { RiGlobalLine } from "react-icons/ri";
 import { BiMenuAltRight } from "react-icons/bi";
 import { FaUserCircle } from "react-icons/fa";
 
-type HeaderProps = {};
-
-const Header: React.FC<HeaderProps> = () => {
+const Header: React.FC = () => {
   return (
     <header className="sticky top-0 z-50 grid grid-cols-3 p-5 shadow-md md:px-10">
       <div className="relative flex items-center h-10 my-auto cursor-pointer">

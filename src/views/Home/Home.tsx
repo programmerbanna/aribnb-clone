@@ -1,8 +1,12 @@
-import React from "react";
+import Banner from "./components/Banner";
 
 type HomeProps = {};
 
 const Home: React.FC<HomeProps> = () => {
-  return <div>Have a good coding</div>;
+  return (
+    <div>
+      <Banner />
+    </div>
+  );
 };
 export default Home;

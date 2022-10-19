@@ -10,12 +10,13 @@ const Banner = () => {
         loading="lazy"
         objectFit="cover"
         alt="airbnb home banner"
+        className="opacity-75"
       />
       <div className="absolute w-full text-center top-1/2">
-        <p className="text-sm sm:text-lg">
+        <p className="text-2xl font-semibold sm:text-4xl sm:font-bold drop-shadow-2xl">
           Fair data use and automated decision making.
         </p>
-        <button className="px-10 py-4 my-3 font-bold text-purple-600 bg-white rounded-full shadow-md hover:shadow-xl">
+        <button className="px-10 py-4 my-3 font-bold text-purple-600 transition duration-150 bg-white rounded-full shadow-md hover:shadow-xl active:scale-90">
           Check here...
         </button>
       </div>

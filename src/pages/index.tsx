@@ -1,7 +1,6 @@
 import Head from "next/head";
 // internal imports
 import Home from "@views/Home";
-import Main from "@components/Main";
 
 export default function HomePage() {
   return (
@@ -12,9 +11,6 @@ export default function HomePage() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Home />
-      <Main>
-        <section></section>
-      </Main>
     </div>
   );
 }

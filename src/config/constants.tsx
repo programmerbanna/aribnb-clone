@@ -1,1 +1,1 @@
-export const landingPageUrls: string[] = ["/"];
+export const mainPageUrls: string[] = ["/"];

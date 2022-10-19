@@ -1,11 +1,11 @@
 // internal components
 import Header from "@components/Header";
 
-type LandingPageLayoutProps = {
+type MainLayoutProps = {
   children?: React.ReactNode;
 };
 
-const LandingPageLayout = ({ children }: LandingPageLayoutProps) => {
+const MainLayout = ({ children }: MainLayoutProps) => {
   return (
     <div className="flex flex-col min-h-screen">
       <Header />
@@ -15,4 +15,4 @@ const LandingPageLayout = ({ children }: LandingPageLayoutProps) => {
   );
 };
 
-export default LandingPageLayout;
+export default MainLayout;

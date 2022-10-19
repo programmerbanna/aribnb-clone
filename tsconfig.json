@@ -20,6 +20,8 @@
       "@components/*": ["src/components/*"],
       "@config": ["src/config"],
       "@config/*": ["src/config/*"],
+      "@context": ["src/context"],
+      "@context/*": ["src/context/*"],
       "@views": ["src/views"],
       "@views/*": ["src/views/*"],
       "@styles": ["src/styles"],

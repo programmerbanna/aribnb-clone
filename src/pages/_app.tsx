@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import "@styles/globals.css";
 import { AppPropsWithLayout } from "@config/types";
 import { mainPageUrls } from "@config/constants";
+import AppContext from "@context/context";
 import MainLaout from "@components/Layout/MainLayout";
 
 export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
@@ -16,5 +17,9 @@ export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
       }
       // return <DashboardLayout>{page}</DashboardLayout>
     });
-  return getLayout(<Component {...pageProps} />);
+  return getLayout(
+    <AppContext>
+      <Component {...pageProps} />
+    </AppContext>
+  );
 }

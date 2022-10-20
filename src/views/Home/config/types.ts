@@ -1,5 +1,5 @@
 export type SmallCardProps = {
-  thumbnail?: string;
-  title?: string;
-  url?: string;
+  name?: string;
+  flag?: string;
+  timezone?: string;
 };

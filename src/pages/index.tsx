@@ -22,9 +22,9 @@ export default function HomePage({ exploreData }) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch(
-    "https://jsonplaceholder.typicode.com/photos"
-  ).then((res) => res.json());
+  const exploreData = await fetch("https://restcountries.com/v3.1/all").then(
+    (res) => res.json()
+  );
 
   return {
     props: {

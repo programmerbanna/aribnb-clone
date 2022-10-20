@@ -5,9 +5,9 @@ import { useEffect } from "react";
 import { useGlobalContext } from "@context/context";
 
 export default function HomePage({ exploreData }) {
-  const { setData } = useGlobalContext();
+  const { setExploreby } = useGlobalContext();
   useEffect(() => {
-    setData(exploreData);
+    setExploreby(exploreData);
   }, []);
   return (
     <div className="">

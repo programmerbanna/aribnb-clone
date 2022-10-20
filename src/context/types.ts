@@ -4,6 +4,6 @@ export type DataTypes = {
   data?: string[];
 }[];
 export type ContextTypes = {
-  data?: DataTypes | null;
-  setData?: React.Dispatch<React.SetStateAction<DataTypes | null>>;
+  exploreBy?: DataTypes | null;
+  setExploreby?: React.Dispatch<React.SetStateAction<DataTypes | null>>;
 };

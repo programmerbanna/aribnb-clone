@@ -7,7 +7,7 @@ export const AppContextProvider = createContext<ContextTypes | null>(null);
 // declaring context options
 
 const AppContext = ({ children }: { children: React.ReactNode }) => {
-  const [data, setData] = useState<DataTypes | null>(null);
+  const [data, setData] = useState<DataTypes | null>();
 
   const value = { data, setData };
   return (

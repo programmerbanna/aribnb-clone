@@ -3,8 +3,8 @@ import { useRouter } from "next/router";
 import "@styles/globals.css";
 import { AppPropsWithLayout } from "@config/types";
 import { mainPageUrls } from "@config/constants";
-import AppContext from "@context/context";
 import MainLaout from "@components/Layout/MainLayout";
+import { AppContext } from "@context/context";
 
 export default function MyApp({ Component, pageProps }: AppPropsWithLayout) {
   const router = useRouter();

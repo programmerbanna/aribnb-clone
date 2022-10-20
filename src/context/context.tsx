@@ -1,7 +1,8 @@
 import React, { createContext, useState } from "react";
+import { useContext } from "react";
 import { ContextTypes, DataTypes } from "./types";
 
-const AppContextProvider = createContext<ContextTypes | null>(null);
+export const AppContextProvider = createContext<ContextTypes | null>(null);
 
 // declaring context options
 
@@ -15,4 +16,8 @@ const AppContext = ({ children }: { children: React.ReactNode }) => {
     </AppContextProvider.Provider>
   );
 };
-export default AppContext;
+
+const useGlobalContext = () => {
+  return React.useContext(AppContextProvider);
+};
+export { AppContext, useGlobalContext };

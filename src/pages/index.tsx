@@ -1,8 +1,16 @@
 import Head from "next/head";
 // internal imports
 import Home from "@views/Home";
+import datas from "@utils/exploreData.json";
+import { useEffect } from "react";
+import { useContext } from "react";
+import { AppContextProvider } from "@context/context";
 
-export default function HomePage() {
+export default function HomePage({ exploreData }) {
+  const { setData } = useContext(AppContextProvider);
+  useEffect(() => {
+    setData(exploreData);
+  }, []);
   return (
     <div className="">
       <Head>
@@ -13,4 +21,16 @@ export default function HomePage() {
       <Home />
     </div>
   );
+}
+
+export async function getStaticProps() {
+  const exploreData = await fetch(
+    "https://jsonplaceholder.typicode.com/photos"
+  ).then((res) => res.json());
+
+  return {
+    props: {
+      exploreData,
+    },
+  };
 }

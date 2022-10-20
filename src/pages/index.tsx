@@ -2,11 +2,10 @@ import Head from "next/head";
 // internal imports
 import Home from "@views/Home";
 import { useEffect } from "react";
-import { useContext } from "react";
-import { AppContextProvider } from "@context/context";
+import { useGlobalContext } from "@context/context";
 
 export default function HomePage({ exploreData }) {
-  const { setData } = useContext(AppContextProvider);
+  const { setData } = useGlobalContext();
   useEffect(() => {
     setData(exploreData);
   }, []);

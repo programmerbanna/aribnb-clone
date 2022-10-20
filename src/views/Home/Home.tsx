@@ -15,16 +15,19 @@ const Home: React.FC = () => {
       <Main>
         <section className="pt-6">
           <h2 className="pb-5 text-4xl font-semibold">Explore Nearby</h2>
-          {data
-            ?.slice(randHighest - 10, randHighest)
-            .map((item: any, i: number) => (
-              <SmallCard
-                key={i}
-                name={item?.name?.common}
-                flag={item?.flags.png}
-                timezone={item?.timezones[0]}
-              />
-            ))}
+          {/* small crd */}
+          <div className="grid grid-col-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
+            {data
+              ?.slice(randHighest - 8, randHighest)
+              .map((item: any, i: number) => (
+                <SmallCard
+                  key={i}
+                  name={item?.name?.common}
+                  flag={item?.flags.png}
+                  timezone={item?.timezones[0]}
+                />
+              ))}
+          </div>
         </section>
       </Main>
     </>

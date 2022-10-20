@@ -7,3 +7,9 @@ export type MediumCardProps = {
   image?: string;
   title?: string;
 };
+export type LargeCardProps = {
+  image?: string;
+  title?: string;
+  description?: string;
+  btnText?: string;
+};

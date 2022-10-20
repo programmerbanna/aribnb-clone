@@ -1,7 +1,6 @@
 import Head from "next/head";
 // internal imports
 import Home from "@views/Home";
-import datas from "@utils/exploreData.json";
 import { useEffect } from "react";
 import { useContext } from "react";
 import { AppContextProvider } from "@context/context";

@@ -22,7 +22,7 @@ export default function HomePage({ exploreData }) {
 }
 
 export async function getStaticProps() {
-  const exploreData = await fetch("https://restcountries.com/v3.1/all").then(
+  const exploreData = await fetch("https://www.jsonkeeper.com/b/4G1G").then(
     (res) => res.json()
   );
 

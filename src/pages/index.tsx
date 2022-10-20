@@ -4,10 +4,11 @@ import Home from "@views/Home";
 import { useEffect } from "react";
 import { useGlobalContext } from "@context/context";
 
-export default function HomePage({ exploreData }) {
-  const { setExploreby } = useGlobalContext();
+export default function HomePage({ exploreData, liveanyWhereData }) {
+  const { setExploreby, setLiveAnyWhere } = useGlobalContext();
   useEffect(() => {
     setExploreby(exploreData);
+    setLiveAnyWhere(liveanyWhereData);
   }, []);
   return (
     <div className="">
@@ -25,10 +26,14 @@ export async function getStaticProps() {
   const exploreData = await fetch("https://www.jsonkeeper.com/b/4G1G").then(
     (res) => res.json()
   );
+  const liveanyWhereData = await fetch(
+    "https://www.jsonkeeper.com/b/VHHT"
+  ).then((res) => res.json());
 
   return {
     props: {
       exploreData,
+      liveanyWhereData,
     },
   };
 }

@@ -6,4 +6,6 @@ export type DataTypes = {
 export type ContextTypes = {
   exploreBy?: DataTypes | null;
   setExploreby?: React.Dispatch<React.SetStateAction<DataTypes | null>>;
+  liveAnyWhere?: DataTypes | null;
+  setLiveAnyWhere?: React.Dispatch<React.SetStateAction<DataTypes | null>>;
 };

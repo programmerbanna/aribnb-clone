@@ -1,7 +1,7 @@
 import Main from "@components/Main";
-import { useGlobalContext } from "@context/context";
 import Banner from "./components/Banner";
 import ExploreNearby from "./helpers/ExploreNearby";
+import LiveAnyWhere from "./helpers/LiveAnyWhere";
 
 const Home: React.FC = () => {
   return (
@@ -10,6 +10,8 @@ const Home: React.FC = () => {
       <Main>
         {/* explore nearby */}
         <ExploreNearby />
+        {/* live any where */}
+        <LiveAnyWhere />
       </Main>
     </>
   );

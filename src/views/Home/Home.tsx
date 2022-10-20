@@ -15,7 +15,7 @@ const Home: React.FC = () => {
         <LiveAnyWhere />
         {/* large card */}
         <LargeCard
-          image="https://links.papreact.com/4cj"
+          image="https://links.papareact.com/4cj"
           title="The Greatest Outdoors"
           description="Wishlist created by Airbnb."
           btnText="Get Inspired"

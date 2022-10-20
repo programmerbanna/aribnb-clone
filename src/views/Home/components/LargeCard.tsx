@@ -22,7 +22,9 @@ const LargeCard: React.FC<LargeCardProps> = ({
       <div className="absolute top-32 left-12">
         <h3 className="w-64 mb-3 text-4xl">{title}</h3>
         <p>{description}</p>
-        <button className="text-sm text-white bg-gray-900">{btnText}</button>
+        <button className="px-4 py-2 mt-5 text-sm text-white bg-gray-900 rounded-lg">
+          {btnText}
+        </button>
       </div>
     </section>
   );

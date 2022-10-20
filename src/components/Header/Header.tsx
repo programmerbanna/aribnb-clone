@@ -7,7 +7,7 @@ import { FaUserCircle } from "react-icons/fa";
 
 const Header: React.FC = () => {
   return (
-    <header className="sticky top-0 z-50 grid grid-cols-3 p-5 shadow-md md:px-10">
+    <header className="sticky top-0 z-50 grid grid-cols-3 p-5 bg-white shadow-md md:px-10">
       <div className="relative flex items-center h-10 my-auto cursor-pointer">
         <Image
           src="/images/airbnb-logo.png"

@@ -3,7 +3,6 @@ import MediumCard from "../components/MediumCard";
 
 const LiveAnyWhere: React.FC = () => {
   const { liveAnyWhere } = useGlobalContext();
-  console.log(liveAnyWhere);
   return (
     <section>
       <h2 className="py-8 text-4xl font-semibold">Live anywhere</h2>
